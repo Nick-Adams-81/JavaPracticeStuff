@@ -21,7 +21,7 @@ public class Main {
         return y;
     }
 
-    static void ReverseString(String str) {
+    static String ReverseString(String str) {
         String revString = "";
         char ch;
         for (int i = 0; i < str.length(); i++) {
@@ -29,13 +29,20 @@ public class Main {
             revString = ch + revString;
         }
 
-        System.out.println("Reversed String: " + revString);
+        return revString;
     }
 
+    static boolean isPalindrome(String str) {
+        if (str.equalsIgnoreCase(ReverseString(str))) {
+            return true;
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
-        FizzBuzz();
-        ReverseString("hello");
+        //FizzBuzz();
+        System.out.println(ReverseString("hello"));
+        System.out.println(isPalindrome("dod"));
         for(int i = 0; i <= 10; i++) {
             System.out.println(Fibonachi(i));
         }
