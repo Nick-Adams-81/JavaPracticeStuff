@@ -32,6 +32,7 @@ public class Main {
         return revString;
     }
 
+
     static boolean isPalindrome(String str) {
         if (str.equalsIgnoreCase(ReverseString(str))) {
             return true;
@@ -45,7 +46,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        //FizzBuzz();
+        FizzBuzz();
         System.out.println(ReverseString("hello"));
         System.out.println(isPalindrome("dod"));
         System.out.println(stripVowels("HelloMoto"));
