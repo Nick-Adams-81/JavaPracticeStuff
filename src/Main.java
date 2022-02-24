@@ -21,10 +21,21 @@ public class Main {
         return y;
     }
 
+    static void ReverseString(String str) {
+        String revString = "";
+        char ch;
+        for (int i = 0; i < str.length(); i++) {
+            ch = str.charAt(i);
+            revString = ch + revString;
+        }
+
+        System.out.println("Reversed String: " + revString);
+    }
+
 
     public static void main(String[] args) {
         FizzBuzz();
-
+        ReverseString("hello");
         for(int i = 0; i <= 10; i++) {
             System.out.println(Fibonachi(i));
         }
