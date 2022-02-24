@@ -39,10 +39,16 @@ public class Main {
         return false;
     }
 
+    static String stripVowels(String str) {
+        str = str.replaceAll("[aeiou]", "");
+        return str;
+    }
+
     public static void main(String[] args) {
         //FizzBuzz();
         System.out.println(ReverseString("hello"));
         System.out.println(isPalindrome("dod"));
+        System.out.println(stripVowels("HelloMoto"));
         for(int i = 0; i <= 10; i++) {
             System.out.println(Fibonachi(i));
         }
