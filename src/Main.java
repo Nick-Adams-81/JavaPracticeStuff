@@ -20,8 +20,15 @@ public class Main {
         prices[2] = 23.79;
         prices[3] = 8.24;
 
+        // for loop
         for(int i = 0; i < prices.length; i++) {
             System.out.println(prices[i]);
+        }
+
+        // array with enhanced for loop
+        int[] nums = {1, 2, 3, 4};
+        for(int n : nums) {
+            System.out.println(n);
         }
 
     }
