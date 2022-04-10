@@ -10,8 +10,23 @@ public class Main {
         return a + b;
     }
 
+    public static int fibonachi(int n) {
+        int a = 0;
+        int b = 1;
+        for(int i = 0; i < n; i++) {
+            int x = a;
+            a = b;
+            b = b + x;
+        }
+
+        return a;
+    }
     public static void main(String[] args) {
         System.out.println(add(2, 5));
+        for(int i = 0; i < 10; i++) {
+            System.out.println(fibonachi(i));
+        }
+
         // arrays
         double[] prices;
         prices = new double[4];
