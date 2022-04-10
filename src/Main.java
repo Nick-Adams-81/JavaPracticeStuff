@@ -24,6 +24,9 @@ public class Main {
         return string;
     }
 
+    public static boolean isPalindrome(String str) {
+        return str.equalsIgnoreCase(revString(str));
+    }
     public static int fibonachi(int n) {
         int a = 0;
         int b = 1;
@@ -42,6 +45,7 @@ public class Main {
         }
         System.out.println(revString("hello world"));
         System.out.println(stripVowels("HEllo WOrld"));
+        System.out.println(isPalindrome("bobby"));
 
         // arrays
         double[] prices;
