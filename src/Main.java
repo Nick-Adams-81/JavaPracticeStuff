@@ -10,6 +10,10 @@ public class Main {
         return a + b;
     }
 
+    public static String stripVowels(String str) {
+        return str.replaceAll("[aeiouAEIOU]", "");
+    }
+
     public static int fibonachi(int n) {
         int a = 0;
         int b = 1;
@@ -26,6 +30,8 @@ public class Main {
         for(int i = 0; i < 10; i++) {
             System.out.println(fibonachi(i));
         }
+
+        System.out.println(stripVowels("HEllo WOrld"));
 
         // arrays
         double[] prices;
