@@ -14,6 +14,16 @@ public class Main {
         return str.replaceAll("[aeiouAEIOU]", "");
     }
 
+    public static String revString(String str) {
+        String string = "";
+        char ch;
+        for(int i = 0; i < str.length(); i++) {
+            ch = str.charAt(i);
+            string = ch + string;
+        }
+        return string;
+    }
+
     public static int fibonachi(int n) {
         int a = 0;
         int b = 1;
@@ -30,7 +40,7 @@ public class Main {
         for(int i = 0; i < 10; i++) {
             System.out.println(fibonachi(i));
         }
-
+        System.out.println(revString("hello world"));
         System.out.println(stripVowels("HEllo WOrld"));
 
         // arrays
