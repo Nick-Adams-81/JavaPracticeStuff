@@ -27,6 +27,7 @@ public class Main {
     public static boolean isPalindrome(String str) {
         return str.equalsIgnoreCase(revString(str));
     }
+
     public static int fibonachi(int n) {
         int a = 0;
         int b = 1;
@@ -38,6 +39,16 @@ public class Main {
 
         return a;
     }
+
+    public static void fizzBuzz() {
+        for(int i = 0; i < 50; i++) {
+            if(i % 15 == 0) System.out.println("FizzBuzz");
+            else if(i % 3 == 0) System.out.println("Fizz");
+            else if(i % 5 == 0) System.out.println("Buzz");
+            else System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println(add(2, 5));
         for(int i = 0; i < 10; i++) {
@@ -46,6 +57,7 @@ public class Main {
         System.out.println(revString("hello world"));
         System.out.println(stripVowels("HEllo WOrld"));
         System.out.println(isPalindrome("bobby"));
+        fizzBuzz();
 
         // arrays
         double[] prices;
