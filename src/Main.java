@@ -87,5 +87,12 @@ public class Main {
         System.out.println(matrix[1][0]);
         System.out.println(matrix[2][2]);
 
+        String[] names = {"nick", "dave", "john", "george"};
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // array lists
+
     }
 }
